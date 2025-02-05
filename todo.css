@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap");
+
+
+body{
+    background-color: #4adf86;
+    display: block;
+}
+.heading{
+    font-family:"Karla" , sans-serif ;
+    color: #4adf86;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 5px 
+}
+#subheading{
+    font-family:"Inter" ;
+    color: #4adf86;
+    font-size: small;
+    text-align: center;
+    margin: 5px;
+    font-weight: lighter;
+}
+#input{
+    width: 250px;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-family: "Inter";
+
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+}
+#main{
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1f2937;
+    width: 450px;
+    height: 350px;
+    box-shadow: 5px 5px 30px #1f2937;
+    border-radius: 10px;
+}
+.save_button ,.clear{
+    
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        background: #4adf86;
+        color: antiquewhite;
+        /* padding: 9px 17px 9px 15px; */
+        width: 80px;
+        height: 35px;
+        /* left: 52px;
+        top: 284px; */
+        border: none;
+        border-radius: 6px;
+
+}
+#mid_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#center{
+    border-color: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+}
+/* Style for individual task items */
+#task_list div {
+    background: #374151;         /* Dark gray background */
+    color: #ffffff;              /* White text */
+    padding: 12px 15px;          /* Space inside each task */
+    margin-bottom: 10px;         /* Space between tasks */
+    border-radius: 8px;          /* Rounded corners */
+    display: flex;               /* Align items horizontally */
+    align-items: center;         /* Vertically center items */
+    justify-content: space-between;  /* Space between checkbox and text */
+    transition: background 0.3s ease; /* Smooth background transition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Checkbox style */
+#task_list input[type="checkbox"] {
+    appearance: none;            /* Remove default checkbox style */
+    width: 20px;                 /* Width of checkbox */
+    height: 20px;                /* Height of checkbox */
+    border: 2px solid #4adf86;   /* Border color */
+    border-radius: 4px;          /* Slightly rounded corners */
+    cursor: pointer;             /* Pointer cursor on hover */
+    margin-right: 10px;          /* Space between checkbox and label */
+    content: "";
+}
+
+/* When checkbox is checked */
+#task_list input[type="checkbox"]:checked {
+    background-color: #4adf86;  /* Green background when checked */
+    border-color: #4adf86;      /* Change border to match background */
+}
+
+/* Custom checkmark for the checkbox */
+#task_list input[type="checkbox"]:checked::after {
+    content: '✔';               /* Checkmark symbol */
+    color: white;               /* Checkmark color */
+    position: absolute;
+    font-size: 14px;            /* Size of the checkmark */
+    top: 1px;
+    left: 4px;
+}
+
+/* Style the label text (task description) */
+#task_list label {
+    flex: 1;                    
+    font-size: 16px;            
+    margin-left: 5px;           
+    word-break: break-word;     
+}
+
+#task_list input[type="checkbox"]:checked + label {
+    text-decoration: line-through;  
+    color:#4adf86;               
+    transition: color 0.3s ease;    
+}
+
+#task_list div:hover {
+    background: #4b5563;    
+}
+
+ #subheading {
+    color: #ffffff;
+}
+
