@@ -139,6 +139,13 @@ body{
     color: #ffffff;
 }
 .delete-btn{
-    background-color: transparent;
+    background: none;
+    border: none;
+    color: #f44336;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
+.delete-btn :hover{
+    color: #ff6b6b;
+}

@@ -22,7 +22,9 @@ function saaf() {
     }
 }
 function deletetask(button){
+    
     button.parentElement.remove();
+
 
 }
 
